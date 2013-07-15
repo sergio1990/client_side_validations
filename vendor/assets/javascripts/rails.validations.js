@@ -554,7 +554,7 @@
   };
 
   window.ClientSideValidations.remote_validators_url_for = function(validator) {
-    if (ClientSideValidations.remote_validators_prefix != null) {
+    if (ClientSideValidations.remote_validators_prefix) {
       return "//" + window.location.host + "/" + ClientSideValidations.remote_validators_prefix + "/validators/" + validator;
     } else {
       return "//" + window.location.host + "/validators/" + validator;
